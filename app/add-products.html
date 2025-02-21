@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6hu7N9L1K7fF+4mMw7rXl7pMjC9z7v9j8BzZz5IW+Tx9BkTh86MkMfNG1F" crossorigin="anonymous">
+    <!-- Link to custom SCSS if needed -->
+    <link rel="stylesheet" href="assets/styles/add-products.css">
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list-products.html">List</a>
+            </div>
+        </div>
+
+<div class="container mt-4">
+    <h1 class="text-center">Add New Product</h1>
+    <form action="#" method="POST" class="mt-4">
+        <!-- Product Photo -->
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="productPhoto" name="productPhoto" accept="image/*" required>
+            <span class="input-group-text" id="basic-addon1">Upload</span>
+        </div>
+
+        <!-- Product Title -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="productTitle" name="productTitle" placeholder="Enter product title" required>
+            <span class="input-group-text" id="basic-addon2">Title</span>
+        </div>
+
+        <!-- Product Description -->
+        <div class="input-group mb-3">
+            <textarea class="form-control" id="productDescription" name="productDescription" placeholder="Product description" maxlength="100" required></textarea>
+            <span class="input-group-text" id="basic-addon3">Description</span>
+        </div>
+
+        <!-- Product Price -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="Price" aria-label="Amount" required>
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <!-- Product Quantity -->
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" id="productQuantity" name="productQuantity" placeholder="Quantity" required>
+            <span class="input-group-text" id="basic-addon4">Qty</span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </div>
+    </form>
+</div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="add-products.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Zr1+9HIvP3yw5Olf5w8eOedvFZ4/kqzF4yzi2bFfP47jpxF" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>
